@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دكتور النبات | Plant Doctor</title>
+<style>
+ body{font-family:system-ui,Tahoma,sans-serif;max-width:640px;margin:0 auto;padding:16px;background:#f4f7f4;color:#1c2b1c}
+ h1{font-size:1.5rem;margin:.2em 0} h2{font-size:1rem;color:#4a6b4a;font-weight:normal;margin-top:0}
+ .card{background:#fff;border-radius:14px;padding:18px;margin:12px 0;box-shadow:0 1px 4px #0001}
+ #drop{border:2px dashed #7ba17b;border-radius:14px;padding:34px;text-align:center;cursor:pointer;background:#fbfefb}
+ #drop.over{background:#e8f3e8}
+ img#prev{max-width:100%;border-radius:10px;margin-top:10px}
+ .res{margin:8px 0;padding:10px;border-radius:10px;background:#f0f6f0}
+ .bar{height:8px;border-radius:4px;background:#3e8e41;margin-top:4px}
+ .adv{font-size:.9rem;background:#fff8e6;border-right:4px solid #e0a800;padding:10px;border-radius:8px;margin-top:8px}
+ .warn{font-size:.85rem;background:#fdecea;border-right:4px solid #c0392b;padding:10px;border-radius:8px;margin-top:8px}
+ small{color:#678}
+</style>
+</head>
+<body>
+<h1>🌿 دكتور النبات</h1>
+<h2>صوّر ورقة النبات وهو يقولك المرض والعلاج — يعمل بالكامل داخل متصفحك، الصورة لا تغادر جهازك.</h2>
+<div class="card">
+ <div id="drop">اضغط لاختيار صورة ورقة نبات أو اسحبها هنا<input type="file" id="file" accept="image/*" hidden></div>
+ <img id="prev" style="display:none">
+ <div id="status"><small>جارٍ تحميل النموذج...</small></div>
+</div>
+<div id="out"></div>
+<div class="card"><small>
+النموذج: MobileNetV3 (مُدرّب مسبقًا على ImageNet) + مصنّف خطي مدرّب على 54,303 صورة حقيقية من PlantVillage.
+دقته 98% على صور مشابهة لصور التدريب (ورقة واحدة على خلفية موحدة)، لكنها أقل بكثير على صور الحقول الطبيعية —
+هذه حدود حقيقية موثقة في README المشروع. النتيجة إرشادية وليست بديلًا عن مهندس زراعي.
+</small></div>
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.min.js"></script>
+<script>
+const MEAN=[0.485,0.456,0.406], STD=[0.229,0.224,0.225];
+let session, head, classes;
+const st = m => document.getElementById('status').innerHTML = '<small>'+m+'</small>';
+async function init(){
+  try{
+    [head, classes] = await Promise.all([
+      fetch('model/head.json').then(r=>r.json()),
+      fetch('model/classes.json').then(r=>r.json())]);
+    session = await ort.InferenceSession.create('model/backbone.onnx');
+    st('النموذج جاهز ✅ اختر صورة');
+  }catch(e){ st('تعذر تحميل النموذج: '+e.message); }
+}
+init();
+const drop = document.getElementById('drop'), file = document.getElementById('file');
+drop.onclick = () => file.click();
+drop.ondragover = e => {e.preventDefault(); drop.classList.add('over')};
+drop.ondragleave = () => drop.classList.remove('over');
+drop.ondrop = e => {e.preventDefault(); drop.classList.remove('over'); if(e.dataTransfer.files[0]) run(e.dataTransfer.files[0]);};
+file.onchange = () => file.files[0] && run(file.files[0]);
+async function run(f){
+  const url = URL.createObjectURL(f);
+  const img = new Image();
+  img.onload = async () => {
+    const pv = document.getElementById('prev'); pv.src = url; pv.style.display='block';
+    const cv = document.createElement('canvas'); cv.width = cv.height = 224;
+    cv.getContext('2d').drawImage(img, 0, 0, 224, 224);
+    const d = cv.getContext('2d').getImageData(0, 0, 224, 224).data;
+    const x = new Float32Array(3*224*224);
+    for(let c=0;c<3;c++) for(let i=0;i<224*224;i++) x[c*224*224+i] = (d[i*4+c]/255 - MEAN[c])/STD[c];
+    st('جارٍ التحليل...');
+    const t = new ort.Tensor('float32', x, [1,3,224,224]);
+    const r = await session.run({image: t});
+    const feat = r.features.data;
+    const logits = head.classes.map((_,k)=>{
+      let s = head.intercept[k]; const w = head.coef[k];
+      for(let j=0;j<feat.length;j++) s += w[j]*feat[j];
+      return s;});
+    const mx = Math.max(...logits);
+    const ex = logits.map(v=>Math.exp(v-mx));
+    const sum = ex.reduce((a,b)=>a+b,0);
+    const p = ex.map(v=>v/sum);
+    const order = p.map((v,i)=>[v,i]).sort((a,b)=>b[0]-a[0]).slice(0,3);
+    let html = '';
+    order.forEach(([prob,i],rank)=>{
+      const c = classes[i];
+      html += `<div class="res"><b>${rank+1}. ${c.ar}</b> <small>(${c.en})</small> — ${(prob*100).toFixed(1)}%<div class="bar" style="width:${(prob*100).toFixed(0)}%"></div>`;
+      if(rank===0){
+        if(prob < 0.5) html += `<div class="warn">⚠️ الثقة منخفضة. صور الحقول الطبيعية أصعب على النموذج من صور التدريب؛ قرّب الكاميرا من ورقة واحدة بخلفية بسيطة وإضاءة جيدة، أو جرّب صورة أخرى.</div>`;
+        html += `<div class="adv">💡 ${c.advice_ar}</div>`;
+      }
+      html += '</div>';
+    });
+    document.getElementById('out').innerHTML = html;
+    st('تم ✅');
+  };
+  img.src = url;
+}
+</script>
+</body>
+</html>

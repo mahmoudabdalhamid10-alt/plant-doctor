@@ -1,0 +1,344 @@
+[
+ {
+  "idx": 0,
+  "key": "apple_scab",
+  "en": "Apple - Apple scab",
+  "ar": "تفاح - الجرب",
+  "healthy": false,
+  "advice_ar": "الجرب مرض فطري. ازلِ الأوراق والثمار المصابة واطمها أو احرقها، ورُش مبيدًا فطريًا مثل الكابتان أو المانكوزيب مع بداية الموسم، وحسّن تهوية الشجرة بالتقليم. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Fungal disease. Remove and destroy infected leaves/fruit, spray captan or mancozeb early season, prune for airflow."
+ },
+ {
+  "idx": 1,
+  "key": "apple_black_rot",
+  "en": "Apple - Black rot",
+  "ar": "تفاح - اللفحة السوداء",
+  "healthy": false,
+  "advice_ar": "اللفحة السوداء فطرية. تخلّص من الثمار المومياء والأغصان المصابة بالتقليم، ورُش مبيدًا نحاسيًا أو فطريًا جهازيًا. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Fungal. Prune out mummified fruit and cankers, spray a copper or systemic fungicide."
+ },
+ {
+  "idx": 2,
+  "key": "apple_cedar_rust",
+  "en": "Apple - Cedar apple rust",
+  "ar": "تفاح - صدأ الأرز",
+  "healthy": false,
+  "advice_ar": "صدأ الأرز يحتاج أشجار العرعر ليكمل دورته. ابعد أشجار العرعر عن البستان إن أمكن، ورُش مبيدًا فطريًا (مثل ميكلوبوتانيل) في فترة الإزهار. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Remove nearby juniper/cedar trees if possible; spray myclobutanil around bloom."
+ },
+ {
+  "idx": 3,
+  "key": "apple_healthy",
+  "en": "Apple - Healthy",
+  "ar": "تفاح - سليم",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 4,
+  "key": "blueberry_healthy",
+  "en": "Blueberry - Healthy",
+  "ar": "توت أزرق - سليم",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 5,
+  "key": "cherry_healthy",
+  "en": "Cherry - Healthy",
+  "ar": "كرز - سليم",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 6,
+  "key": "cherry_powdery_mildew",
+  "en": "Cherry - Powdery mildew",
+  "ar": "كرز - البياض الدقيقي",
+  "healthy": false,
+  "advice_ar": "البياض الدقيقي فطر شائع. رُش كبريتًا زراعيًا أو مبيدًا فطريًا جهازيًا، وحسّن التهوية، وتجنّب التسميد النيتروجيني الزائد. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Spray horticultural sulfur or a systemic fungicide, improve airflow, avoid excess nitrogen."
+ },
+ {
+  "idx": 7,
+  "key": "corn_gray_leaf_spot",
+  "en": "Corn - Gray leaf spot",
+  "ar": "ذرة - التبقع الرمادي",
+  "healthy": false,
+  "advice_ar": "التبقع الرمادي فطري وينتشر مع الرطوبة. ازرع أصنافًا مقاومة، وطبّق تدوير المحاصيل وحرث بقايا المحصول، ورُش مبيدًا فطريًا (ستروبيلورين) عند ظهور الأعراض. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Resistant hybrids, crop rotation, residue tillage, strobilurin fungicide at first symptoms."
+ },
+ {
+  "idx": 8,
+  "key": "corn_common_rust",
+  "en": "Corn - Common rust",
+  "ar": "ذرة - الصدأ الشائع",
+  "healthy": false,
+  "advice_ar": "الصدأ الشائع فطري. الزراعة المبكرة والأصناف المقاومة أفضل حماية، ويمكن الرش بمبيد فطري عند الظهور المبكر. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Early planting and resistant hybrids; fungicide if it appears early."
+ },
+ {
+  "idx": 9,
+  "key": "corn_healthy",
+  "en": "Corn - Healthy",
+  "ar": "ذرة - سليمة",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 10,
+  "key": "corn_northern_blight",
+  "en": "Corn - Northern leaf blight",
+  "ar": "ذرة - اللفحة الشمالية",
+  "healthy": false,
+  "advice_ar": "اللفحة الشمالية فطرية. استخدم أصنافًا مقاومة وتدويرًا للمحاصيل، ورُش مبيدًا فطريًا عند بداية الإصابة خصوصًا مع الطقس الرطب. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Resistant hybrids, rotation, fungicide at onset in humid weather."
+ },
+ {
+  "idx": 11,
+  "key": "grape_black_rot",
+  "en": "Grape - Black rot",
+  "ar": "عنب - اللفحة السوداء",
+  "healthy": false,
+  "advice_ar": "اللفحة السوداء من أخطر أمراض العنب. اجمع العناقيد والأوراق المصابة وتخلص منها، ورُش مانكوزيب أو مبيدًا جهازيًا من مرحلة ما قبل الإزهار. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Remove infected clusters/leaves; spray mancozeb or systemic fungicide from pre-bloom."
+ },
+ {
+  "idx": 12,
+  "key": "grape_esca",
+  "en": "Grape - Esca (black measles)",
+  "ar": "عنب - الإسكا (الحصبة السوداء)",
+  "healthy": false,
+  "advice_ar": "الإسكا مرض خشبي مزمن بلا علاج شافٍ. قلّم الأجزاء المصابة بعيدًا عن الأنسجة السليمة وعقّم الأدوات، وخفف إجهاد الكرمة. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Chronic trunk disease, no full cure; prune well below symptoms, sanitize tools."
+ },
+ {
+  "idx": 13,
+  "key": "grape_healthy",
+  "en": "Grape - Healthy",
+  "ar": "عنب - سليم",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 14,
+  "key": "grape_leaf_blight",
+  "en": "Grape - Leaf blight",
+  "ar": "عنب - لفحة الأوراق",
+  "healthy": false,
+  "advice_ar": "لفحة الأوراق فطرية. ازلِ الأوراق المصابة، وحسّن التهوية داخل الكرمة، ورُش مبيدًا فطريًا وقائيًا. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Remove infected leaves, open the canopy, preventive fungicide."
+ },
+ {
+  "idx": 15,
+  "key": "orange_hlb",
+  "en": "Orange - Citrus greening (HLB)",
+  "ar": "برتقال - الإخضرار (التنين الأصفر)",
+  "healthy": false,
+  "advice_ar": "الإخضرار (HLB) مرض بكتيري خطير لا علاج له. الحل الوحيد: إزالة الأشجار المصابة فورًا لحماية البستان، ومكافحة حشرة السيلا الناقلة، وزراعة شتلات معتمدة خالية. هذا التشخيص من صورة ورقة غير مؤكد؛ يجب تأكيده بتحليل معملي.",
+  "advice_en": "HLB is a fatal bacterial disease with no cure: remove infected trees, control the psyllid vector, plant certified clean stock. Leaf-photo suspicion must be lab-confirmed."
+ },
+ {
+  "idx": 16,
+  "key": "peach_bacterial_spot",
+  "en": "Peach - Bacterial spot",
+  "ar": "خوخ - التبقع البكتيري",
+  "healthy": false,
+  "advice_ar": "التبقع البكتيري يزيد مع الري العلوي والجروح. رُش مبيدًا نحاسيًا في السكون وعند سقوط الأوراق، وتجنّب البلل العلوي، وازرع أصنافًا متحملة. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Copper sprays in dormancy/leaf fall, avoid overhead watering, tolerant varieties."
+ },
+ {
+  "idx": 17,
+  "key": "peach_healthy",
+  "en": "Peach - Healthy",
+  "ar": "خوخ - سليم",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 18,
+  "key": "pepper_bacterial_spot",
+  "en": "Bell pepper - Bacterial spot",
+  "ar": "فلفل - التبقع البكتيري",
+  "healthy": false,
+  "advice_ar": "تبقع بكتيري ينتقل بالبذور والرذاذ. استخدم بذورًا معتمدة، وطبّق تدويرًا بعيدًا عن الطماطم والفلفل لمدة سنتين، ورُش نحاسًا وقائيًا. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Certified seed, 2-year rotation away from pepper/tomato, preventive copper."
+ },
+ {
+  "idx": 19,
+  "key": "pepper_healthy",
+  "en": "Bell pepper - Healthy",
+  "ar": "فلفل - سليم",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 20,
+  "key": "potato_early_blight",
+  "en": "Potato - Early blight",
+  "ar": "بطاطس - الندوة المبكرة",
+  "healthy": false,
+  "advice_ar": "الندوة المبكرة فطرية. ابدأ الرش الوقائي (كلوروثالونيل أو مانكوزيب) عند ظهور البقع، وطبّق تدويرًا وأزل بقايا المحصول. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Preventive chlorothalonil/mancozeb at first spots; rotation and residue removal."
+ },
+ {
+  "idx": 21,
+  "key": "potato_healthy",
+  "en": "Potato - Healthy",
+  "ar": "بطاطس - سليمة",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 22,
+  "key": "potato_late_blight",
+  "en": "Potato - Late blight",
+  "ar": "بطاطس - الندوة المتأخرة",
+  "healthy": false,
+  "advice_ar": "الندوة المتأخرة سريعة الانتشار وخطيرة جدًا مع الطقس الرطب. رُش مبيدًا جهازيًا (ميتالاكسيل أو سايموكسانيل) فورًا، وتخلص من النباتات شديدة الإصابة، ولا تخزن درنات من حقول مصابة. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Aggressive disease: immediate systemic fungicide (metalaxyl/cymoxanil), destroy heavily infected plants, never store tubers from infected fields."
+ },
+ {
+  "idx": 23,
+  "key": "raspberry_healthy",
+  "en": "Raspberry - Healthy",
+  "ar": "توت العليق - سليم",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 24,
+  "key": "soybean_healthy",
+  "en": "Soybean - Healthy",
+  "ar": "فول الصويا - سليم",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 25,
+  "key": "squash_powdery_mildew",
+  "en": "Squash - Powdery mildew",
+  "ar": "قرع - البياض الدقيقي",
+  "healthy": false,
+  "advice_ar": "البياض الدقيقي شائع في القرعيات. رُش كبريتًا أو مبيدًا جهازيًا مبكرًا، وحسّن التهوية والمسافات، واروِ من الأسفل. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Early sulfur or systemic fungicide, spacing/airflow, water at the base."
+ },
+ {
+  "idx": 26,
+  "key": "strawberry_healthy",
+  "en": "Strawberry - Healthy",
+  "ar": "فراولة - سليمة",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 27,
+  "key": "strawberry_leaf_scorch",
+  "en": "Strawberry - Leaf scorch",
+  "ar": "فراولة - لفحة الأوراق",
+  "healthy": false,
+  "advice_ar": "لفحة الأوراق فطرية. ازلِ الأوراق المصابة القديمة، واروِ بالتنقيط بدل الرش، وجدد الزراعات القديمة، ورُش مبيدًا فطريًا عند الحاجة. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Remove old infected leaves, drip irrigation, renovate old beds, fungicide if needed."
+ },
+ {
+  "idx": 28,
+  "key": "tomato_bacterial_spot",
+  "en": "Tomato - Bacterial spot",
+  "ar": "طماطم - التبقع البكتيري",
+  "healthy": false,
+  "advice_ar": "تبقع بكتيري ينتشر بالرذاذ والأيدي المبللة. رُش نحاسًا وقائيًا، وتجنّب العمل في الزرع المبلل، واستخدم شتلات معتمدة. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Preventive copper, avoid handling wet plants, certified transplants."
+ },
+ {
+  "idx": 29,
+  "key": "tomato_early_blight",
+  "en": "Tomato - Early blight",
+  "ar": "طماطم - الندوة المبكرة",
+  "healthy": false,
+  "advice_ar": "الندوة المبكرة فطرية تبدأ من الأوراق السفلية. ازلِ الأوراق المصابة، وغطِّ التربة بالمهاد، ورُش كلوروثالونيل أو مانكوزيب. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Remove lower infected leaves, mulch, chlorothalonil/mancozeb sprays."
+ },
+ {
+  "idx": 30,
+  "key": "tomato_healthy",
+  "en": "Tomato - Healthy",
+  "ar": "طماطم - سليمة",
+  "healthy": true,
+  "advice_ar": "النبات سليم ولا توجد علامات مرض واضحة. حافظ على الري المنتظم والتسميد المتوازن والمراقبة الدورية.",
+  "advice_en": "The plant looks healthy. Keep up regular watering, balanced feeding and monitoring."
+ },
+ {
+  "idx": 31,
+  "key": "tomato_late_blight",
+  "en": "Tomato - Late blight",
+  "ar": "طماطم - الندوة المتأخرة",
+  "healthy": false,
+  "advice_ar": "الندوة المتأخرة تدمّر الزراعة في أيام مع الرطوبة. رُش مبيدًا جهازيًا فورًا (ميتالاكسيل)، وتخلص من البؤر المصابة، وراقب التقلبات الجوية. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Destroys crops fast in humid weather: immediate systemic fungicide, remove infection foci."
+ },
+ {
+  "idx": 32,
+  "key": "tomato_leaf_mold",
+  "en": "Tomato - Leaf mold",
+  "ar": "طماطم - عفن الأوراق",
+  "healthy": false,
+  "advice_ar": "عفن الأوراق يحب رطوبة الصوب. خفّض الرطوبة بالتهوية والري الصباحي، ورُش مبيدًا فطريًا مناسبًا، وازرع أصنافًا مقاومة. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Reduce greenhouse humidity (ventilation, morning watering), suitable fungicide, resistant varieties."
+ },
+ {
+  "idx": 33,
+  "key": "tomato_septoria",
+  "en": "Tomato - Septoria leaf spot",
+  "ar": "طماطم - تبقع السبتوريا",
+  "healthy": false,
+  "advice_ar": "تبقع السبتوريا فطري. ازلِ الأوراق السفلية المصابة، وطبّق تدويرًا 2-3 سنوات، ورُش مبيدًا فطريًا وقائيًا. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Remove infected lower leaves, 2-3 year rotation, preventive fungicide."
+ },
+ {
+  "idx": 34,
+  "key": "tomato_spider_mites",
+  "en": "Tomato - Spider mites",
+  "ar": "طماطم - العنكبوت الأحمر",
+  "healthy": false,
+  "advice_ar": "العنكبوت الأحمر آفة حشرية دقيقة وليس فطرًا. رُش أكاروس مناسب أو زيت النيم، ورش ماء قوي تحت الأوراق، وحافظ على الأعداء الطبيعيين. استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "A mite pest, not a fungus: suitable acaricide or neem oil, strong water spray under leaves, protect beneficial insects."
+ },
+ {
+  "idx": 35,
+  "key": "tomato_target_spot",
+  "en": "Tomato - Target spot",
+  "ar": "طماطم - التبقع الهدفي",
+  "healthy": false,
+  "advice_ar": "التبقع الهدفي فطري وينتشر مع الرطوبة. حسّن التهوية، واروِ من الأسفل، ورُش مبيدًا فطريًا (كلوروثالونيل أو أزوكسيستروبين). استشر مهندسًا زراعيًا قبل استخدام أي مبيد، والتزم بجرعات النشرة الاسترشادية.",
+  "advice_en": "Improve airflow, base watering, chlorothalonil or azoxystrobin."
+ },
+ {
+  "idx": 36,
+  "key": "tomato_mosaic_virus",
+  "en": "Tomato - Mosaic virus",
+  "ar": "طماطم - فيروس الموزاييك",
+  "healthy": false,
+  "advice_ar": "فيروس الموزاييك لا يُعالج بالمبيدات. اقلع النباتات المصابة وتخلص منها، واغسل الأيدي وعقّم الأدوات، وكافح المن الناقل، وازرع أصنافًا مقاومة.",
+  "advice_en": "Virus - no spray cures it. Rogue infected plants, sanitize hands/tools, control aphids, resistant varieties."
+ },
+ {
+  "idx": 37,
+  "key": "tomato_yellow_leaf_curl",
+  "en": "Tomato - Yellow leaf curl virus",
+  "ar": "طماطم - فيروس تجعد الأوراق الصفراء",
+  "healthy": false,
+  "advice_ar": "فيروس تجعد الأوراق (TYLCV) ينقله الذباب الأبيض ولا علاج له. المكافحة تعتمد على الذبابة البيضاء: شِد شبكًا ناعمًا على الصوب، واستخدم أصنافًا متحملة، واقلع المصاب مبكرًا.",
+  "advice_en": "TYLCV is whitefly-transmitted with no cure: insect netting, tolerant varieties, early roguing, whitefly control."
+ }
+]

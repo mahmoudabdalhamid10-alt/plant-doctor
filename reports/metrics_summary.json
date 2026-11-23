@@ -1,0 +1,37 @@
+{
+  "best_model": "linsvc_balanced",
+  "candidates": {
+    "dummy_most_frequent": {
+      "val_acc": 0.10141190914671577,
+      "val_macro_f1": 0.004846024323991341,
+      "fit_s": 0.0
+    },
+    "logreg_balanced": {
+      "val_acc": 0.9761817065684469,
+      "val_macro_f1": 0.9668588089058343,
+      "fit_s": 16.8
+    },
+    "linsvc_balanced": {
+      "val_acc": 0.9787599754450583,
+      "val_macro_f1": 0.9722910846932131,
+      "fit_s": 70.1
+    },
+    "knn5": {
+      "val_acc": 0.9534683855125844,
+      "val_macro_f1": 0.9371120352792147,
+      "fit_s": 6.0
+    }
+  },
+  "pv_test": {
+    "n": 8146,
+    "acc": 0.9803584581389639,
+    "macro_f1": 0.9744939787808431,
+    "weighted_f1": 0.9802694793008856
+  },
+  "plantdoc_field": {
+    "n": 2558,
+    "acc": 0.11415168100078187,
+    "macro_f1": 0.07488741818148753,
+    "weighted_f1": 0.11479568078268514
+  }
+}

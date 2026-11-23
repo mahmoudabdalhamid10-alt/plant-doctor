@@ -1,0 +1,12 @@
+{
+  "logreg_deployed": {
+    "pv_test_acc": 0.9788853424993862,
+    "pv_test_macro_f1": 0.9716173027889695,
+    "pv_test_top5": 0.9995089614534741,
+    "field_crop_acc": 0.1570217471433837,
+    "field_crop_top5": 0.45030101978129994,
+    "field_full_acc": 0.15519937451133697,
+    "field_crop_binary_healthy_acc": 0.6661752057992383,
+    "pv_test_binary_healthy_acc": 0.9961944512644243
+  }
+}
